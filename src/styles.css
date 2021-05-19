@@ -50,3 +50,12 @@ button:hover {
   margin-top: 1rem;
   margin-left: 10rem;
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 12.5rem 10px;
+}
+
+th {
+  padding: 10px 0;
+}

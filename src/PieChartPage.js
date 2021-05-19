@@ -1,20 +1,18 @@
 import Header from "./Header";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import HomePage from "./HomePage";
 const PieChartPage = () => {
   return (
     <>
       <h1>Hi This is PieChart Page...</h1>
       <div className="parent">
         <Router>
-          <Link exact to="/piechart">
+          <Link exact to="/home">
             <button>Previous Page</button>
           </Link>
           <Switch>
-            {/* <Route path="/">
-            <HomePage />
-          </Route> */}
-            <Route path="/piechart">
-              <PieChartPage />
+            <Route path="/home">
+              <HomePage />
             </Route>
           </Switch>
         </Router>
