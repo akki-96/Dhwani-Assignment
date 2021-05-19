@@ -1,4 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+  background-color: rgb(187, 233, 233);
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  height: 10vh;
+  width: 98.7vw;
+  padding: 10px;
+  background-color: rgb(255, 147, 23);
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+h1 {
+  padding: 20px;
+  font-size: 40px;
+}
+button {
+  height: 2.5rem;
+  width: 8rem;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(252, 76, 223);
+  color: rgb(34, 8, 8);
+  cursor: pointer;
+  transition: 0.6s;
+  margin-top: 1rem;
+  margin-left: 69.5rem;
+}
+
+button:hover {
+  background-color: rgb(179, 255, 0);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.userList {
+  height: 75vh;
+  width: 80vw;
+  background-color: yellow;
+  margin-top: 1rem;
+  margin-left: 10rem;
 }

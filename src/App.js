@@ -1,10 +1,16 @@
 import "./styles.css";
-
+import React from "react";
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
+import Header from "./Header";
+import HomePage from "./HomePage";
+import PieChartPage from "./PieChartPage";
 export default function App() {
+  const api = `https://randomuser.me/api`;
+
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Header />
+      <HomePage />
     </div>
   );
 }
