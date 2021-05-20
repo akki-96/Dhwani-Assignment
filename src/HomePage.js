@@ -4,15 +4,15 @@ const HomePage = ({ user }) => {
   console.log({ user });
   return (
     <div className="parent">
-      <button>Next Page</button>
       <div className="userList">
         <table>
-          <thead>
-            <tr>
+          <thead className="heads">
+            <tr className="headName">
+              <th>S_No.</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Mobile</th>
               <th>Address</th>
+              <th>Website</th>
             </tr>
           </thead>
           <tbody>
@@ -20,9 +20,10 @@ const HomePage = ({ user }) => {
               <>
                 <tr>
                   <td>{items.id}</td>
-                  <td>{items.title}</td>
-                  <td>{items.completed ? "false" : "true"}</td>
-                  <td>{items.userId}</td>
+                  <td>{items.name}</td>
+                  <td>{items.email}</td>
+                  <td>{items.address.city}</td>
+                  <td>{items.website}</td>
                 </tr>
               </>
             ))}
